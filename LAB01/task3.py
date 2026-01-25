@@ -1,14 +1,8 @@
-#q.2
+students = {}
+for i in range(3):
+    name=input("enter your name")
+    marks=int(input("enter your marks"))
+    students[name]=marks
 
-def evenfunc(num):
-  checkeven=1
-  count = 0
-  while (checkeven <= num) :
-    if(checkeven % 2 == 0):
-      print (checkeven)
-      count+=1
-    checkeven=checkeven +1
-  print("total even numbers:" ,count)
-     
-takenum=int(input("enter a number"))
-evenfunc(takenum)
+for name,marks in students.items():
+    print(name , ":" , marks)
